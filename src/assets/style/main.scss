@@ -1,3 +1,11 @@
+// setup
+@import 'setup/_variables.scss';
+@import 'setup/_mixins.scss';
+@import 'setup/_functions.scss';
+
+//layout
+@import 'basics/_layout.scss';
+
 @import 'cmps/app-header.scss';
 @import 'cmps/app-footer.scss';
 @import 'cmps/car-list.scss';
