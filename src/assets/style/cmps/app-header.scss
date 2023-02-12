@@ -2,28 +2,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    height: 5vh;
+    height: 8vh;
     padding-inline: 10px;
-    background-color: lightblue;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
 
     a {
         margin-inline-start: 1em;
     }
+
+    font-family: fantasy;
 }
 
 .logo-container {
     width: 200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     height: 100%;
 
     h1 {
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+        text-align: center;
     }
 
     img {
-        width: 100%;
+        width: 80px;
         object-fit: cover;
         background-image: none;
     }

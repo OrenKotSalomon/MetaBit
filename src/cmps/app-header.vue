@@ -6,12 +6,16 @@
     </div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/car">Cars</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/contacts">Contacts</RouterLink>
+      <RouterLink to="/stats">stats</RouterLink>
     </nav>
   </header>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+};
 </script>
