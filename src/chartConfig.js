@@ -18,11 +18,11 @@ export const data = {
         {
             label: 'Data One',
             backgroundColor: '#f87979',
-            data: sumData().then(res => res)
+            data: await sumData()
         }
     ]
 }
-console.log()
+
 async function sumData() {
     const fullData = await bitcoinService.getMarketPriceHistory()
     let sum = 0
@@ -35,7 +35,6 @@ async function sumData() {
         return acc
     }, [])
     return temp
-
 }
 
 export const options = {

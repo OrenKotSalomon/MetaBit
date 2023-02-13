@@ -4,7 +4,7 @@ import HomeView from '../pages/HomeView.vue'
 // import CarIndex from '../pages/car-index.vue'
 import contactIndex from '../pages/contact-index.vue'
 import ContactDetails from '../pages/contact-details.vue'
-import CarEdit from '../pages/car-edit.vue'
+import ContactEdit from '../pages/contact-edit.vue'
 
 const routerOptions = {
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -23,7 +23,7 @@ const routerOptions = {
         },
         {
             path: '/contact/edit/:_id?',
-            component: CarEdit,
+            component: ContactEdit,
         },
         {
             path: '/stats',

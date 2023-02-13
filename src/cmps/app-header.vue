@@ -1,6 +1,13 @@
 <template>
   <header>
-    <div class="logo-container">
+    <div
+      class="logo-container"
+      @click="
+        () => {
+          this.$router.push('/');
+        }
+      "
+    >
       <img src="../assets/imgs/logo.png" alt="" />
       <h1>METABIT</h1>
     </div>

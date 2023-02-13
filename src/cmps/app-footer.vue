@@ -1,9 +1,9 @@
 <template>
-    <footer>
-        <p>Coffeerights 2023</p>
-    </footer>
+  <footer>
+    <p class="text-footer">Coffeerights 2023</p>
+  </footer>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
