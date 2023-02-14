@@ -13,6 +13,21 @@ header {
     }
 
     font-family: fantasy;
+
+    button {
+        display: none;
+
+        @include for-normal-layout {
+            display: block;
+        }
+    }
+}
+
+.link-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+
 }
 
 .logo-container {
@@ -33,5 +48,72 @@ header {
         width: 80px;
         object-fit: cover;
         background-image: none;
+    }
+}
+
+.user-container {
+    display: flex;
+    gap: 20px;
+}
+
+@include for-normal-layout {
+
+    .nav-btn {
+
+        display: block;
+        opacity: 1;
+        z-index: 1;
+        margin-right: 20px;
+    }
+
+    .link-container {
+        display: grid;
+        text-align: center;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .user-container {
+        height: 20px;
+    }
+
+    .link-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+
+        .nav-close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 0rem;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .responsive_nav {
+        transform: none;
+        background-color: rgb(241, 241, 241);
+        // opacity: 0.9;
+        z-index: 10;
+    }
+
+    .active {
+        color: black;
+        border-right: 3px solid black;
+        border-bottom: 0px solid black;
     }
 }

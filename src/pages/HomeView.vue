@@ -1,11 +1,6 @@
 <template>
   <section class="home-container">
     <div class="img-container">
-      <div class="user-container">
-        <span class="user-info">{{ user.name }}</span>
-        <p>{{ user.balance }}</p>
-        <p>{{ bitcoinRate }}</p>
-      </div>
       <img src="../assets/imgs/img02.jpg" alt="" />
       <p>A crypto wallet gateway to blockchain apps</p>
       <img src="../assets/imgs/img01.jpg" alt="" />
